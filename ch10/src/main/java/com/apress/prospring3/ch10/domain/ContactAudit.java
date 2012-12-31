@@ -169,7 +169,7 @@ public class ContactAudit implements Auditable<String, Long>, Serializable {
 	}
 
 	@Column(name="CREATED_DATE")
-	@Type(type="org.joda.time.contrib.hibernate.PersistentDateTime")
+	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentDateTime")
 	public DateTime getCreatedDate() {
 		return createdDate;
 	}
@@ -188,7 +188,7 @@ public class ContactAudit implements Auditable<String, Long>, Serializable {
 	}
 
 	@Column(name="LAST_MODIFIED_DATE")
-	@Type(type="org.joda.time.contrib.hibernate.PersistentDateTime")
+	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentDateTime")
 	public DateTime getLastModifiedDate() {
 		return lastModifiedDate;
 	}
